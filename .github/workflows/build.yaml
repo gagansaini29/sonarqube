@@ -34,7 +34,7 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: SonarQube Scan
-      uses: sonarqube/sonarqube-action@master
+      uses: gagansaini29/sonarqube@master
       with:
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
